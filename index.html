@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codeforces Progress Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Codeforces Progress Tracker</h1>
+        <div class="input-section">
+            <input type="text" id="cfHandle" placeholder="Enter Codeforces Handle">
+            <button onclick="loadSolvedProblems()">Load Solved</button>
+        </div>
+        <div class="input-section">
+            <input type="text" id="problemInput" placeholder="Enter Problem Code (e.g., 1433C)">
+            <input type="text" id="problemRating" placeholder="Enter Rating (e.g., 1200)">
+            <select id="problemTopic">
+                <option value="Greedy">Greedy</option>
+                <option value="DP">DP</option>
+                <option value="Binary Search">Binary Search</option>
+                <option value="Graph">Graph</option>
+                <option value="Math">Math</option>
+            </select>
+            <button onclick="addProblem()">Add Problem</button>
+        </div>
+        <div id="sections"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
